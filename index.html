@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELLO</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .con{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: gray;
+            height: 50vh;
+            justify-content:flex-start;
+            align-items: center;
+            
+           
+        }
+        .dh {
+         
+            width: 200px;
+            height:50px;
+            background-color: aqua;
+            flex-grow: 1;
+           
+
+        }
+
+        .d {
+            height: 50px;
+            width: 200px;
+            background-color: red;
+            flex-grow: 1;
+            order: 1;
+            align-self:flex-end;
+
+           
+        }
+
+        .h {
+            width: 200px;
+            height: 50px;
+            background-color: black;
+            flex-grow: 1;
+            order:2;
+
+
+        }
+
+        .dha
+        {
+            width: 200px;
+            height: 50px;
+            background-color: burlywood;
+            flex-grow: 2;
+
+           
+        }
+        .fin
+        {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(8, 90, 34);
+        }
+        ul{
+           background-color: red;
+        }
+        li{
+            list-style-type: none;
+            padding: 20px;
+            margin:100px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <nav>
+           <ul>
+               <li>home</li>
+               <li  > about</li>
+               <li>contact</li>
+           </ul>
+        </nav>
+        <div class="con">
+            <div class="dh">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda exercitationem omnis perspiciatis animi fugiat nisi autem! Impedit, ipsa veritatis! Nihil eius expedita distinctio.
+            </div>
+            <div class="d"></div>
+            <div class="h"></div>
+            <div class="dha"></div>
+        </div>
+        <div class="fin"></div>
+    </main>
+</body>
+
+</html>

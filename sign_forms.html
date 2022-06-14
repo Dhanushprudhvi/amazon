@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
+    <style>
+        body {
+
+            display: flex;
+            background-color: blueviolet;
+            justify-content: center;
+           
+            padding-top: 15vh;
+
+
+        }
+
+        h1 {
+            font-family: 'Tiro Devanagari Hindi', serif;
+            text-transform: capitalize;
+
+        }
+
+        .login-details {
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            padding-top: 20px;
+            width: 350px;
+            height: 500px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .name {
+            text-align: left;
+            font-family: 'Joan', serif;
+            padding: 5px 45px 5px;
+        }
+
+        .pass {
+            text-align: left;
+            font-family: 'Joan', serif;
+            padding-top: 5px;
+            padding-left: 45px;
+
+        }
+
+        .fpass {
+            padding-top: 1px;
+            padding-left: 112px;
+            font-size: smaller;
+        }
+
+        .but {
+            margin-top: 10px;
+        }
+
+        .or {
+            font-size: smaller;
+            font-family: inherit;
+            text-transform: capitalize;
+            margin-top: 40px;
+
+
+        }
+
+        input {
+
+            border-top: 0px solid black;
+            width: 230px;
+            margin: 14px;
+            font-family: cursive;
+
+        }
+        img{
+            width: 150px;
+            margin-top: 10px;
+            
+        }
+        @media screen and (max-width:1600px ) {
+            body{
+             
+                padding-top: 10vh;
+                padding-bottom: 10vh;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="login-details">
+            <h1>login <br> </h1>
+            <div class="name"> username <br><input type="text" placeholder="Type ur user name"></div>
+            <div class="pass"> password <br><input type="text" placeholder="Type yout password"></div>
+            <div class="fpass">
+                <p style="cursor:pointer; margin: 0;">forgot password ?</p>
+            </div>
+            <div class="but"> <input type="button" value="login"></div>
+            <div class="or">or sign up using</div>
+            
+            <a href="https://www.google.com"><img src="/logos2.jpg" alt="notfound"></a>
+        </div>
+    </form>
+</body>
+
+</html>

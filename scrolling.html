@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .images{
+            margin: 100px 300px;
+            display: flex;
+            height: 200px;
+            width:300px;
+            overflow: scroll;
+            border: 5px solid skyblue;
+            /* animation: slider 3s ease-in 5 alternate; */
+
+        }
+        /* @keyframes slider {
+            form{
+                transform: translateX(0px);
+            }
+            to{
+                transform: translateX(500px);
+            }
+            
+        } */
+        
+       
+        .box1{
+            background-color: blue;
+            width:200px;
+            height:200px;
+            animation:rolla 50s linear infinite alternate;
+        }
+        .box2{
+            background-color: rgb(205, 26, 133);
+            width:200px;
+            height:200px;
+            animation:rollb 5s linear infinite alternate;
+        }
+        @keyframes rolla {
+            0%{
+                  transform: translateX(0px) rotate(0deg) ;
+            }
+            
+            100%{
+                transform: translateX(1200px)   rotate(3600deg);
+            }
+            
+        }
+        @keyframes rollb {
+            0%{
+                  transform:  rotate(0deg) translateX(0px) ;
+            }
+            
+            100%{
+                transform:  rotate(3600deg) translateX(1200px) ;
+            }
+        }
+            
+        .allu img{
+            width: 300px;
+            height: 200px;
+        }
+        .mahi img{
+            height: 200px;
+            width: 300px;
+        }
+        .ram img{
+            width: 300px;
+            height: 200px;
+
+        }
+        .ntr img{
+            width: 300px;
+            height: 200px;
+
+        }
+    </style>
+</head>
+<body>
+   <div class="images">
+       <div class="allu"><img src="/allu-arjun.jpg" alt=""></div>
+       <div class="mahi"><img src="/mahesh.jpg" alt=""></div>
+       <div class="ram"><img src="/ramcharan.jpg" alt=""></div>
+       <div class="ntr"><img src="/ntr.jpg" alt=""></div>
+   </div>
+   <div class="box1">
+   </div>
+   <div class="box2">
+</div>
+</body>
+</html>

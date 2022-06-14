@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg,rgb(163, 159, 31),rgb(255, 0, 144));
+        }
+
+        .instaprofile {
+            display: flex;
+            position: relative;
+            justify-content: center;
+            width: 300px;
+            height: 170px;
+            /* height: 300px; */
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            transition: 0.5s linear;
+        }
+
+        .instaprofile .image {
+            position: absolute;
+            width: 150px;
+            height: 140px;
+            border-radius: 20px;
+            transition: 0.5s linear;
+            transform: translateY(-20%);
+            background-color: aqua;
+            overflow: hidden;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .instaprofile:hover .image {
+            width: 200px;
+            height: 170px;
+
+        }
+        
+
+        .image img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .instaprofile .content {
+            
+            display: flex;
+            width: 100%;
+            height: 100%;
+            
+            justify-content: center;
+            align-items: flex-end;
+            /* margin-bottom: 10px; */
+            overflow: hidden;
+            transition:0.5s linear;
+            /* transform: translateY(120px); */
+
+        }
+
+        .instaprofile:hover {
+            height: 350px;
+        }
+        /* .content:hover{
+            margin-top:150px;
+        } */
+        .name{
+            width: 100%;
+            text-align: center;
+            
+        }
+        .name h3 {
+            font-weight: 600;
+        }
+
+        .name p {
+            text-align: center;
+            font-weight: 100;
+            opacity: 0.4;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .platform{
+            /* padding-top: 20px; */
+            
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto auto;
+
+        }
+        .posts
+        {
+            display: flex;
+            align-items: center;
+        }
+        .posts h4{
+            width: 59.9167px;
+        }
+        .posts p{
+            width: 59.9167px;
+        }
+        .followers
+        {
+            
+            display: flex;
+            align-items: center;
+        }
+        .followers h4{
+            width: 100%;
+        }
+        .followers p{
+            width: 100%;
+        }
+        .followings
+        {
+            
+            display: flex;
+            align-items: center;
+        }
+        .followings h4{
+            width: 100%;
+        }
+        .followings p{
+            width: 100%;
+        }
+        .buttons{
+            width: 100%;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+        .buttons button{
+            padding:10px 20px;  
+            background-color: rgb(255, 9, 132);
+            color: white;
+            border-radius:10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 500;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="instaprofile">
+        <div class="image">
+            <img src="allu-arjun.jpg" alt="http://127.0.0.1:5500/allu-arjun.jpg">
+        </div>
+        <div class="content">
+            <div class="name">
+                <h3>ALLU ARJUN</h2>
+                    <p>ACTOR</p>
+            </div>
+            <div class="platform">
+                <div class="posts">
+                    <h4>456</h4>
+                    <p>posts</p>
+                </div>
+                <div class="followers">
+                    <h4>243k</h4>
+                    <p>followers<br></p>
+                </div>
+                <div class="followings">
+                    <h4>951</h4>
+                    <p>following</p>
+                </div>
+            </div>
+            <div class="buttons">
+                <button>Follow</button>
+                <button style="background-color: white; color: black;">Message</button>
+            </div> 
+        </div>
+    </div>
+</body>
+
+</html>
